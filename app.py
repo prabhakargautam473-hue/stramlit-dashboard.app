@@ -1,8 +1,11 @@
+import os
+os.system("pip intsall matplotlib pandas  streamlit)
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 st.set_page_config(layout="wide",page_title="STARTUP FUNDING ANALYSIS")
-df=pd.read_csv("startup_clean.csv")
+df=pd.read_csv("star
+tup_clean.csv")
 df["date"]=pd.to_datetime(df["date"],errors="coerce")
 df["month"]=df["date"].dt.month
 df["year"]=df["date"].dt.year
